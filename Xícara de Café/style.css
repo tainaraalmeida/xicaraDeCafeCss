@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: rgb(221, 221, 197);
+}
+
+.cup{
+    position: relative;
+    background: rgb(0, 0, 0);
+    width: 180px;
+    height: 100px;
+    top: 100px;
+    left: 60px;
+    border-radius: 20px 20px 200px 200px;
+}
+
+.plate::before{
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.alca::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top:10px;
+    left: 160px;
+    border-radius: 50px 30px 30px 50px;
+    border: solid 5px rgb(0, 0, 0);
+    
+}
+p{
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: 'Parisienne', cursive;
+    
+  
+}
+
+.cookie{
+    
+    height: 35px;
+    width: 35px;
+    margin-left: 200px;
+    margin-top: 85px;
+   
+    border-radius: 100%;
+    background: #ac744d;
+    transform: skew(50deg, -6deg)
+  
+  
+    
+}
+
+
+.circle{
+    content: "";
+    position:absolute;
+    border: solid 1px #5c2c0a ;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+margin-left: 11px;
+margin-top: 15px;
+background:#5c2c0a;
+  
+}
+
+.cookie div:nth-child(2){
+    content: "";
+    position:absolute;
+    border: solid 1px #5c2c0a;
+    border-radius: 100%;
+    width: 3px;
+    height: 3px;
+    margin-left: 20px;
+    margin-top: 24px;
+    background: #5c2c0a;
+}
+.cookie div:nth-child(3){
+    content: "";
+    position:absolute;
+    border: solid 1px #5c2c0a;
+    border-radius: 100%;
+    width: 3px;
+    height: 3px;
+    margin-left: 15px;
+    margin-top: 2px;
+    background: #5c2c0a;
+}
